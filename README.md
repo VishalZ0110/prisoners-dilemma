@@ -1,6 +1,10 @@
 # Prisoner's Dilemma — LLM Agent Simulation
 
-Two LLM agents play a repeated Prisoner's Dilemma via [Ollama](https://ollama.com). The game rules are presented without naming the game, testing whether LLMs discover cooperative strategies on their own.
+Two LLM agents play a repeated [Prisoner's Dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma) against each other, powered by local models via [Ollama](https://ollama.com). Each agent is given only the scoring rules and interaction history — the game is never named — to test whether LLMs can independently discover cooperative equilibria through repeated interaction.
+
+On every turn, both agents simultaneously choose to **COOPERATE** or **DEFECT** without seeing the other's current decision. Choices are revealed together, rewards are applied, and each agent receives an updated history written from its own first-person perspective before the next turn. This mirrors the information structure of the classical game while keeping the prompt model-agnostic.
+
+The two agents can run different underlying models and carry completely independent prompt templates, making it easy to pit different strategies, personas, or model sizes against each other.
 
 ## Payoff Matrix
 
