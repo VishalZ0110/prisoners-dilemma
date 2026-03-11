@@ -13,7 +13,7 @@ Two LLM agents play a repeated Prisoner's Dilemma via [Ollama](https://ollama.co
 
 ```bash
 python -m venv env_agents && source env_agents/bin/activate
-pip install smolagents litellm
+pip install -r requirements.txt
 ollama pull qwen2:7b
 ```
 
