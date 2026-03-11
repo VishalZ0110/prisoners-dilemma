@@ -46,3 +46,4 @@ result.json
 # OS
 .DS_Store
 Thumbs.db
+temp.py
